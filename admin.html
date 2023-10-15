@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kafene - Orders</title>
+
+    <!-- Poppins Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav id="nav_bar" class="row">
+      <div class="container nav_bar_container space-between">
+        <div class="row">
+          <div id="navbar_brand" class="column v-middle">
+            <a class="row navbar-brand" href="#">
+              <img class="logo-image v-middle" src="logo.png" alt="logo" />
+              <p class="logo-text">Kafene</p>
+            </a>
+          </div>
+          <div class="column">
+            <div class="row space-between v-middle">
+              <a
+                id="order-link"
+                class="nav-link active"
+                onclick="go_to('order');"
+                >Orders</a
+              >
+              <a id="product-link" class="nav-link" onclick="go_to('product');"
+                >Products</a
+              >
+              <a id="user-link" class="nav-link" onclick="go_to('user');"
+                >Users</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <a class="nav-link" onclick="logout();"
+            ><button class="logout">logout</button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- body content -->
+    <div class="container">
+      <div id="body_box" class="column full-width">
+        <!-- generated body code will be placed here -->
+      </div>
+    </div>
+
+    <!-- JS & JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- access control function -->
+    <script type="text/javascript" src="js/password.js"></script>
+
+    <!-- custom JS & Jquery -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/display.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+  </body>
+</html>

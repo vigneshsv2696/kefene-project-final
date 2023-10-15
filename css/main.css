@@ -1,0 +1,192 @@
+/* main custom css */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0px;
+	background-color: #115058;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+
+.v-middle {
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.m-0 {
+	margin: 0px;
+}
+
+.text-no-wrap {
+	white-space: nowrap;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0,0,0,.8);
+}
+
+#nav_bar {
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	background-color:rgb(245, 245, 245);
+	margin-bottom: 4vh;
+}
+
+.nav_bar_container {
+	width: 90%;
+}
+
+#navbar_brand {
+	margin-right: 4em;
+}
+
+#navbar_brand_main {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.nav-link {
+	margin-right: 2em;
+	font-weight: 500;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	cursor: pointer;
+}
+
+.nav-link.active {
+	color: #861810;
+    border-bottom: 3px solid #eb47e6;
+}
+
+.logo-image {
+	width: 24px;
+	height: 28px;
+	margin-right: 8px;
+	
+}
+
+.logo-text {
+	font-size: 30px;
+	letter-spacing: -1px;
+	font-weight: 500;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+/* -------------- */
+
+.full-width {
+	width: 100%;
+}
+
+#section_heading {
+	text-transform: capitalize;
+}
+
+.filter_section {
+	width: 16%;
+}
+
+.filter-item {
+	margin: 6px 0;
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	margin-right: 12px;
+}
+
+.data_section {
+	width: 84%;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+	vertical-align: middle;
+}
+
+td, th {
+	padding: 12px 24px;
+	font-size: 14px;
+}
+
+tbody td {
+	background-color:white;
+	border-bottom: 2px solid black;
+}
+
+.silent-text {
+	color: rgb(140, 140, 140);
+}
+
+#search_box_form {
+	width: 70%;
+	margin-bottom: 5vh;
+}
+
+.search_box {
+	width: 60%;
+	padding: 12px 14px;
+	font-size: 15px;
+	border-radius: 50px;
+	
+	margin: 0 36px 0 0;
+	outline: none;
+}
+.logout{
+	background-color: #121480;
+	top: 0;
+	padding: 05px;
+	color: #fff;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 100px;
+	border-radius: 50px;
+
+
+}
+logout:hover{
+	background-color: chartreuse;
+	cursor: pointer;
+}
+
+.search_button {
+	border-radius: 30px;
+	padding: 14px 36px;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	background-color: #6447b3;
+	font-weight: 500;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kafene - Admin Login</title>
+
+    <!-- Poppins Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+  </head>
+  <body>
+    <!--
+			Functionality:
+				- The login form has only one validation which is "username and password should be the same".
+				- If the values differ then show an alert which says, "Please enter valid credentials!".
+				- If the values are the same then show an alert which says, "Login Successful" and redirect to the orders page.
+				- You have to maintain the user session i.e., if the user closes the browser and comes back he/she should be able to see correct logged-in status.
+		-->
+
+    <!-- navigation bar -->
+    <nav id="nav_bar" class="row">
+      <div class="container nav_bar_container">
+        <div id="navbar_brand_main" class="column v-middle">
+          <a class="row navbar-brand" href="#">
+            <img class="logo-image v-middle" src="logo.png" alt="logo" />
+            <p class="logo-text">Kafene</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- body content -->
+    <div class="container space-around">
+      <div id="login_box" class="column">
+        <h1>Sign In</h1>
+        <form id="login_form" class="column" method="POST" action="admin.html">
+          <input
+            class="input-text-field"
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+          />
+          <input
+            class="input-text-field"
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+          <button id="login_button" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JS & JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom JS & Jquery -->
+    <script type="text/javascript" src="js/login.js"></script>
+  </body>
+</html>
